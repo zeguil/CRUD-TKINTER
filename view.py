@@ -1,3 +1,19 @@
+import mysql.connector
+
+conexao = mysql.connector.connect(
+    host='localhost:3306',
+    user='root',
+    password='199909',
+    database='faculdade',
+)
+
+cursor = conexao.cursor()
+
+lista = []
+
+query = "INSERT INTO alunos(nome, email, telefone, nascimento, ativo, UF, cidade) VALUES (?, ?, ?, ?, ?, ?, ?,)"
+cursor.execute(query, lista)
+
 #CRUD
 
 # CREATE

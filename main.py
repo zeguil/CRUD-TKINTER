@@ -1,6 +1,7 @@
 from tkinter import *
 from tkcalendar import Calendar, DateEntry
 from tkinter import ttk
+from view  import *
 
 ################# cores ###############
 co0 = "#000000"  # Preto
@@ -22,7 +23,7 @@ janela = Tk()
 janela.title("FACULDADE TECHDEV")
 janela.geometry('1105x653')
 janela.configure(background= co9)
-janela.resizable(width=False, height=False)
+janela.resizable(width=1505, height=853)
 
 ################# Dividindo Janela ###############
 frame_cima = Frame(janela, widt=410, height=80, bg=co10, relief='flat')
